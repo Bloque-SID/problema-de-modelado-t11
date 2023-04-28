@@ -1,260 +1,290 @@
-INSERT INTO Team(teamCode) VALUES ('T001')
-;
-
-INSERT INTO Team(teamCode) VALUES ('T002')
-;
-
-INSERT INTO Team(teamCode) VALUES ('T003')
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S001', 'T001', 'Juan', 'García', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S002', 'T001', 'María', 'Pérez', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S003', 'T001', 'Pedro', 'Díaz', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S004', 'T001', 'Ana', 'Martínez', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S005', 'T001', 'Luis', 'González', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S006', 'T002', 'Sofía', 'Hernández', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S007', 'T002', 'Pablo', 'Ruiz', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S008', 'T002', 'Carmen', 'Gutiérrez', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S009', 'T002', 'Antonio', 'Fernández', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S010', 'T002', 'Marta', 'Sánchez', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S011', 'T003', 'Javier', 'López', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S012', 'T003', 'Sara', 'Gómez', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S013', 'T003', 'Diego', 'Ramírez', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S014', 'T003', 'Olivia', 'Torres', 5000)
-;
-
-INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S015', 'T003', 'Hugo', 'Jiménez', 5000)
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C001', 'Argentina')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C002', 'Bolivia')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C003', 'Chile')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C004', 'Colombia')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C005', 'Costa Rica')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C006', 'Ecuador')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C007', 'España')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C008', 'México')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C009', 'Perú')
-;
-
-INSERT INTO Country(countryCode, countryName) VALUES ('C010', 'Uruguay')
-;
-
-INSERT INTO Commission(commissionCode, CommissionPercentage) VALUES ('COM001', 0.025)
-;
-
-INSERT INTO Commission(commissionCode, CommissionPercentage) VALUES ('COM002', 0.030)
-;
-
-INSERT INTO Commission(commissionCode, CommissionPercentage) VALUES ('COM003', 0.035)
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP001', 'C001', 'Banco de Chile')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP002', 'C002', 'Honda Motor Co.')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP003', 'C003', 'Nestlé S.A.')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP004', 'C004', 'Samsung Electronics')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP005', 'C005', 'Telstra Corporation')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP006', 'C006', 'Lufthansa')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP007', 'C007', 'Emirates Airline')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP008', 'C008', 'Unilever')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP009', 'C009', 'Coca-Cola')
-;
-
-INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP010', 'C010', 'Sony Corporation')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP001', 'CT001', 'Juan', 'Pérez', '555-1234', 'juan.perez@bancochile.cl')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP001', 'CT002', 'Ana', 'González', '555-5678', 'ana.gonzalez@bancochile.cl')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP002', 'CT003', 'Takashi', 'Yamada', '555-9012', 'takashi.yamada@honda.co.jp')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP002', 'CT004', 'Maria', 'Santos', '555-3456', 'maria.santos@honda.com.br')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP003', 'CT005', 'Pierre', 'Dubois', '555-7890', 'pierre.dubois@nestle.fr')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP003', 'CT006', 'Sophie', 'Lefèvre', '555-2345', 'sophie.lefevre@nestle.ch')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP004', 'CT007', 'Ji-hyun', 'Kim', '555-6789', 'jihyun.kim@samsung.co.kr')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP005', 'CT008', 'John', 'Smith', '555-0123', 'john.smith@telstra.com.au')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP006', 'CT009', 'Hans', 'Müller', '555-4567', 'hans.mueller@lufthansa.de')
-;
-
-INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP007', 'CT010', 'Fatima', 'Ali', '555-8901', 'fatima.ali@emirates.com')
-;
-
-INSERT INTO Service(serviceCode, serviceName, serviceDescription, servicePrice)   
-VALUES ('S001', 'Stand en evento', 'Espacio para colocar un stand publicitario en las instalaciones de un evento', 1000.00)
-;
-
-INSERT INTO Service(serviceCode, serviceName, serviceDescription, servicePrice)   
-VALUES ('S002', 'Post en Instagram', 'Publicación de una imagen y mensaje publicitario en la cuenta de Instagram de la empresa', 500.00)
-;
-
-INSERT INTO Service(serviceCode, serviceName, serviceDescription, servicePrice)   
-VALUES ('S003', 'Mención en evento', 'Mención de agradecimiento a la empresa en partes importantes del evento, como discursos o presentaciones', 750.00)
-;
-
-INSERT INTO Package (packageCode, packageName) VALUES ('PKG001', 'Bronze Package')
-;
-
-INSERT INTO Package (packageCode, packageName) VALUES ('PKG002', 'Silver Package')
-;
-
-INSERT INTO Package (packageCode, packageName) VALUES ('PKG003', 'Gold Package')
-;
-
-INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG001', 'S001')
-;
-
-INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG002', 'S001')
-;
-
-INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG002', 'S002')
-;
-
-INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG003', 'S001')
-;
-
-INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG003', 'S002')
-;
-
-INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG003', 'S003')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR001', 'T001', 'SP001', 'COM001', 'PKG001')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR002', 'T001', 'SP002', 'COM002', 'PKG002')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR003', 'T001', 'SP003', 'COM003', 'PKG003')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR004', 'T001', 'SP004', 'COM001', 'PKG002')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR005', 'T001', 'SP005', 'COM002', 'PKG003')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR006', 'T001', 'SP006', 'COM003', 'PKG001')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR007', 'T001', 'SP007', 'COM001', 'PKG002')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR008', 'T001', 'SP008', 'COM002', 'PKG003')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR009', 'T001', 'SP009', 'COM003', 'PKG001')
-;
-
-INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR010', 'T001', 'SP010', 'COM001', 'PKG002')
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R001', 'SP001', 'T001', '2023-04-27')
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R001', 'SP001', 'T001', '2023-04-27')
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R001', 'SP001', 'T001',TO_DATE('27/04/2023', 'DD/MM/YYYY'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R002', 'SP002', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R003', 'SP003', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R004', 'SP004', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R005', 'SP005', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R006', 'SP006', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R007', 'SP007', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R008', 'SP008', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R009', 'SP009', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R010', 'SP010', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'))
-;
-
-
-
+INSERT INTO Team(teamCode) VALUES ('T001');
+INSERT INTO Team(teamCode) VALUES ('T002');
+INSERT INTO Team(teamCode) VALUES ('T003');
+INSERT INTO Team(teamCode) VALUES ('T004');
+INSERT INTO Team(teamCode) VALUES ('T005');
+INSERT INTO Team(teamCode) VALUES ('T006');
+INSERT INTO Team(teamCode) VALUES ('T007');
+INSERT INTO Team(teamCode) VALUES ('T008');
+INSERT INTO Team(teamCode) VALUES ('T009');
+INSERT INTO Team(teamCode) VALUES ('T010');
+INSERT INTO Team(teamCode) VALUES ('T011');
+INSERT INTO Team(teamCode) VALUES ('T012');
+INSERT INTO Team(teamCode) VALUES ('T013');
+INSERT INTO Team(teamCode) VALUES ('T014');
+INSERT INTO Team(teamCode) VALUES ('T015');
+INSERT INTO Team(teamCode) VALUES ('T016');
+INSERT INTO Team(teamCode) VALUES ('T017');
+INSERT INTO Team(teamCode) VALUES ('T018');
+INSERT INTO Team(teamCode) VALUES ('T019');
+INSERT INTO Team(teamCode) VALUES ('T020');
+INSERT INTO Team(teamCode) VALUES ('T021');
+INSERT INTO Team(teamCode) VALUES ('T022');
+INSERT INTO Team(teamCode) VALUES ('T023');
+INSERT INTO Team(teamCode) VALUES ('T024');
+INSERT INTO Team(teamCode) VALUES ('T025');
+
+
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S001', 'T001', 'Juan', 'García', 5000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S002', 'T001', 'María', 'Pérez', 5000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S003', 'T002', 'Pedro', 'Sánchez', 4000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S004', 'T002', 'Ana', 'Gómez', 7500);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S005', 'T003', 'Luis', 'Hernández', 3000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S006', 'T003', 'Carmen', 'Ruiz', 5500);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S007', 'T004', 'Pablo', 'López', 8000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S008', 'T004', 'Isabel', 'Fernández', 5000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S009', 'T005', 'Daniel', 'Martínez', 4000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S010', 'T005', 'Sara', 'García', 9000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S011', 'T006', 'Javier', 'Pérez', 6000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S012', 'T006', 'Laura', 'Sánchez', 3500);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S013', 'T007', 'Carlos', 'Hernández', 2000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S014', 'T007', 'Marta', 'Gómez', 8500);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S015', 'T008', 'Fernando', 'Ruiz', 3000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S016', 'T008', 'Elena', 'López', 4500);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S017', 'T009', 'Francisco', 'Fernández', 6500);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S018', 'T009', 'Lucía', 'Martínez', 8000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S019', 'T010', 'Miguel', 'García', 7000);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S020', 'T010', 'Silvia', 'Pérez', 4500);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S021', 'T011', 'Carla', 'López', 2800);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S022', 'T011', 'Pedro', 'Rojas', 4500);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S023', 'T012', 'Sara', 'Gutiérrez', 3700);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S024', 'T012', 'Luis', 'Martínez', 5400);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S025', 'T013', 'Ana', 'Ramírez', 3200);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S026', 'T013', 'Diego', 'Castro', 6200.90);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S027', 'T014', 'Carolina', 'Fernández', 4100.70);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S028', 'T014', 'Javier', 'Sánchez', 8700.20);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S029', 'T015', 'Camila', 'Alvarez', 6900.30);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S030', 'T015', 'Gabriel', 'Gómez', 3400.80);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S031', 'T016', 'Lucía', 'Ruiz', 5400.50);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S032', 'T016', 'Felipe', 'Hernández', 4200.90);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S033', 'T017', 'Abril', 'Díaz', 3000.00);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S034', 'T017', 'Jorge', 'Torres', 4800.70);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S035', 'T018', 'Valentina', 'Cortés', 6100.40);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S036', 'T018', 'Miguel', 'Castillo', 7500.20);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S037', 'T019', 'Isabella', 'Vega', 2800.50);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S038', 'T019', 'Pablo', 'Guerrero', 3400.80);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S039', 'T020', 'Florencia', 'Paz', 4200.90);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S040', 'T020', 'Sebastián', 'Ramos', 2500.30);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S041', 'T021', 'Fernanda', 'Jiménez', 3100.60);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S042', 'T021', 'Emilio', 'Moreno', 5400.50);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S043', 'T022', 'Adriana', 'Molina', 6100.40);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S044', 'T022', 'Ana', 'López', 6800.56);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S045', 'T023', 'Carlos', 'Gutiérrez', 4500.00);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S046', 'T023', 'Laura', 'Ramos', 8200.00);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S047', 'T024', 'Santiago', 'Torres', 7100.43);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S048', 'T024', 'Valentina', 'Vargas', 8300.00);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S049', 'T025', 'Diego', 'Martínez', 9800.34);
+INSERT INTO Seller(sellerCode, teamCode, firstName, lastName, salary) VALUES ('S050', 'T025', 'Mariana', 'Castro', 7450.28);
+
+
+
+INSERT INTO Country(countryCode, countryName) VALUES ('C001', 'Argentina');
+INSERT INTO Country(countryCode, countryName) VALUES ('C002', 'Bolivia');
+INSERT INTO Country(countryCode, countryName) VALUES ('C003', 'Chile');
+INSERT INTO Country(countryCode, countryName) VALUES ('C004', 'Colombia');
+INSERT INTO Country(countryCode, countryName) VALUES ('C005', 'Costa Rica');
+INSERT INTO Country(countryCode, countryName) VALUES ('C006', 'Ecuador');
+INSERT INTO Country(countryCode, countryName) VALUES ('C007', 'España');
+INSERT INTO Country(countryCode, countryName) VALUES ('C008', 'México');
+INSERT INTO Country(countryCode, countryName) VALUES ('C009', 'Perú');
+INSERT INTO Country(countryCode, countryName) VALUES ('C010', 'Uruguay');
+
+
+INSERT INTO Commission(commissionCode, CommissionPercentage) VALUES ('COM001', 0.025);
+INSERT INTO Commission(commissionCode, CommissionPercentage) VALUES ('COM002', 0.030);
+INSERT INTO Commission(commissionCode, CommissionPercentage) VALUES ('COM003', 0.035);
+
+
+
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP001', 'C001', 'Banco de Chile');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP002', 'C002', 'Honda Motor Co.');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP003', 'C003', 'Nestlé S.A.');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP004', 'C004', 'Samsung Electronics');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP005', 'C005', 'Telstra Corporation');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP006', 'C006', 'Lufthansa');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP007', 'C007', 'Emirates Airline');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP008', 'C008', 'Unilever');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP009', 'C009', 'Coca-Cola');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP010', 'C010', 'Sony Corporation');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP011', 'C001', 'Banco Santander');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP012', 'C002', 'Toyota Motor Corpat');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP013', 'C003', 'Procter & Gamble');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP014', 'C004', 'Microsoft Corporati');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP015', 'C005', 'The Coca-Cola Compa');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP016', 'C006', 'BMW Group');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP017', 'C007', 'Air France-KLM');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP018', 'C008', 'Nokia Corporation');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP019', 'C009', 'PepsiCo');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP020', 'C010', 'Amazon.com');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP021', 'C001', 'Falabella');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP022', 'C002', 'Panasonic poration');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP023', 'C003', 'Nissan Motor  Ltd.');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP024', 'C004', 'Apple Inc.');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP025', 'C005', 'Ford Motor Company');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP026', 'C006', 'Siemens AG');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP027', 'C007', 'Qatar Airways');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP028', 'C008', 'Hewlett-Packard Co');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP029', 'C009', 'Kraft Foods Inc.');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP030', 'C010', 'Walt Disney Company');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP031', 'C001', 'Telefónica');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP032', 'C002', 'Ford Motor Company');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP033', 'C003', 'Kellogg Company');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP034', 'C004', 'Google LLC');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP035', 'C005', 'General Electric');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP036', 'C006', 'Oracle Corporation');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP037', 'C007', 'American Airlines');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP038', 'C008', '3M Company');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP039', 'C009', 'Danone');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP040', 'C001', 'Intel Corporation');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP041', 'C002', 'Procter & Gamble Co.');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP042', 'C003', 'The Walt Disney Comp');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP043', 'C004', 'Toyota Motor Corpora');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP044', 'C005', 'Verizon Communicatio');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP045', 'C006', 'Siemens AG');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP046', 'C007', 'General Electric');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP047', 'C008', 'Johnson & Johnson');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP048', 'C009', 'The Procter');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP049', 'C010', 'PepsiCo, Inc.');
+INSERT INTO Sponsor(sponsorCode, countryCode, companyName) VALUES ('SP050', 'C001', 'Amazon.com, Inc.');
+
+
+
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP001', 'CT001', 'Juan', 'Pérez', '555-1234', 'juan.perez@bancochile.cl');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP002', 'CT002', 'Ana', 'González', '555-5678', 'ana.gonzalez@bancochile.cl');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP003', 'CT003', 'Takashi', 'Yamada', '555-9012', 'takashi.yamada@honda.co.jp');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP004', 'CT004', 'Maria', 'Santos', '555-3456', 'maria.santos@honda.com.br');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP005', 'CT005', 'Pierre', 'Dubois', '555-7890', 'pierre.dubois@nestle.fr');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP006', 'CT006', 'Sophie', 'Lefèvre', '555-2345', 'sophie.lefevre@nestle.ch');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP007', 'CT007', 'Ji-hyun', 'Kim', '555-6789', 'jihyun.kim@samsung.co.kr');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP008', 'CT008', 'John', 'Smith', '555-0123', 'john.smith@telstra.com.au');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP009', 'CT009', 'Hans', 'Müller', '555-4567', 'hans.mueller@lufthansa.de');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP010', 'CT010', 'Fatima', 'Ali', '555-8901', 'fatima.ali@emirates.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP011', 'CT011', 'Seung-min', 'Lee', '555-1234', 'seungmin.lee@samsung.co.kr');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP012', 'CT012', 'Jane', 'Doe', '555-5678', 'jane.doe@telstra.com.au');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP013', 'CT013', 'Andreas', 'Schmidt', '555-9012', 'andreas.schmidt@lufthan.de');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP014', 'CT014', 'Mohammed', 'Khalid', '555-3456', 'mohammed.khalid@emirates.m');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP015', 'CT015', 'Lena', 'Johansson', '555-7890', 'lena.johansson@unilever.se');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP016', 'CT016', 'John', 'Doe', '555-2345', 'john.doe@unilever.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP017', 'CT017', 'Rafael', 'García', '555-6789', 'rafael.garcia@coca-cola.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP018', 'CT018', 'Yuko', 'Sato', '555-0123', 'yuko.sato@sony.co.jp');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP019', 'CT019', 'David', 'Lee', '555-4567', 'david.lee@sony.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP020', 'CT020', 'Maria', 'García', '555-8901', 'maria.garcia@sony.es');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP021', 'CT021', 'Hans', 'Andersson', '555-1234', 'hans.andersson@ikea.se');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP022', 'CT022', 'Ana', 'Martinez', '555-5678', 'ana.martinez@iberdrola.es');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP023', 'CT023', 'Nina', 'Kuznetsova', '555-9012', 'nina.kuznetsova@gazprm.ru');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP024', 'CT024', 'David', 'González', '555-1234', 'david.gonzalez@bancochi.cl');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP025', 'CT025', 'Carla', 'Rodríguez', '555-5678', 'carla.rodriguez@bancochicl');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP026', 'CT026', 'Yoko', 'Suzuki', '555-9012', 'yoko.suzuki@honda.co.jp');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP027', 'CT027', 'Bruno', 'Silva', '555-3456', 'bruno.silva@honda.com.br');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP028', 'CT028', 'Antoine', 'Dupont', '555-7890', 'antoine.dupont@nestle.fr');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP029', 'CT029', 'Julie', 'Martin', '555-2345', 'julie.martin@nestle.ch');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP030', 'CT030', 'Seong-woo', 'Lee', '555-6789', 'seongwoo.lee@samsung.co.kr');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP031', 'CT031', 'Emily', 'Johnson', '555-0123', 'emily.johnson@telstra.com.au');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP032', 'CT032', 'Franz', 'Schmidt', '555-4567', 'franz.schmidt@lufthansa.de');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP033', 'CT033', 'Ahmed', 'Khan', '555-8901', 'ahmed.khan@emirates.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP034', 'CT034', 'Alice', 'Lee', '555-1234', 'alice.lee@unilever.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP035', 'CT035', 'Thomas', 'Johnson', '555-5678', 'thomas.johnson@unilevr.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP036', 'CT036', 'Luis', 'González', '555-9012', 'luis.gonzalez@gonzales.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP037', 'CT037', 'Michael', 'Johnson', '555-7890', 'michael.johnson@nike.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP038', 'CT038', 'Emma', 'Jones', '555-2345', 'emma.jones@shell.com');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP039', 'CT039', 'Miguel', 'García', '555-6789', 'miguel.garcia@iberdrola.es');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP040', 'CT040', 'François', 'Laroche', '555-0123', 'francois.laroche@totl.r');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP041', 'CT041', 'Hiroshi', 'Nakamura', '555-4567', 'hiroshi.nakamura@toyo.jp');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP042', 'CT042', 'Juan', 'González', '555-8901', 'juan.gonzalez@santander.cl');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP043', 'CT043', 'Maria', 'Rodriguez', '555-1234', 'maria.rodriguez@inditex.c');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP044', 'CT044', 'Jung-ho', 'Kim', '555-5678', 'jungho.kim@sk.co.kr');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP045', 'CT045', 'Julia', 'Müller', '555-9012', 'julia.mueller@siemens.de');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP046', 'CT046', 'Mohamed', 'Ali', '555-3456', 'mohamed.ali@total.sd');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP047', 'CT047', 'Olivia', 'Brown', '555-7890', 'olivia.brown@britishairwaysm');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP048', 'CT048', 'Luis', 'Hernández', '555-2345', 'luis.hernandez@bbva.com.mx');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP049', 'CT049', 'Sophie', 'Dubois', '555-6789', 'sophie.dubois@lvmh.fr');
+INSERT INTO Contact(sponsorCode, codeContact, firstName, lastName, contactCellPhoneNumber, emailAdress) VALUES ('SP050', 'CT050', 'Emma', 'Wilson', '555-6789', 'emma.wilson@acme.com');
+
+
+
+INSERT INTO Service(serviceCode, serviceName, serviceDescription, servicePrice) VALUES ('S001', 'Stand en evento', 'Espacio para colocar un stand publicitario en las instalaciones de un evento', 1000.00);
+INSERT INTO Service(serviceCode, serviceName, serviceDescription, servicePrice) VALUES ('S002', 'Post en Instagram', 'Publicación de una imagen y mensaje publicitario en la cuenta de Instagram de la empresa', 500.00);
+INSERT INTO Service(serviceCode, serviceName, serviceDescription, servicePrice) VALUES ('S003', 'Mención en evento', 'Mención de agradecimiento a la empresa en partes importantes del evento, como discursos o presentaciones', 750.00);
+
+
+
+INSERT INTO Package (packageCode, packageName) VALUES ('PKG001', 'Bronze Package');
+INSERT INTO Package (packageCode, packageName) VALUES ('PKG002', 'Silver Package');
+INSERT INTO Package (packageCode, packageName) VALUES ('PKG003', 'Gold Package');
+
+
+
+INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG001', 'S001');
+INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG002', 'S001');
+INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG002', 'S002');
+INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG003', 'S001');
+INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG003', 'S002');
+INSERT INTO Package_Service (packageCode, serviceCode) VALUES ('PKG003', 'S003');
+
+
+
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR001', 'T001', 'SP001', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR002', 'T002', 'SP002', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR003', 'T003', 'SP003', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR004', 'T004', 'SP004', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR005', 'T005', 'SP005', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR006', 'T006', 'SP006', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR007', 'T007', 'SP007', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR008', 'T008', 'SP008', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR009', 'T009', 'SP009', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR010', 'T010', 'SP010', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR011', 'T011', 'SP011', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR012', 'T012', 'SP012', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR013', 'T013', 'SP013', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR014', 'T014', 'SP014', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR015', 'T015', 'SP015', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR016', 'T016', 'SP016', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR017', 'T017', 'SP017', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR018', 'T018', 'SP018', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR019', 'T019', 'SP019', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR020', 'T020', 'SP020', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR021', 'T021', 'SP021', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR022', 'T022', 'SP022', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR023', 'T023', 'SP023', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR024', 'T024', 'SP024', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR025', 'T025', 'SP025', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR026', 'T001', 'SP026', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR027', 'T002', 'SP027', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR028', 'T003', 'SP028', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR029', 'T004', 'SP029', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR030', 'T005', 'SP030', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR031', 'T006', 'SP031', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR032', 'T007', 'SP032', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR033', 'T008', 'SP033', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR034', 'T009', 'SP034', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR035', 'T010', 'SP035', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR036', 'T011', 'SP036', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR037', 'T012', 'SP037', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR038', 'T013', 'SP038', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR039', 'T014', 'SP039', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR040', 'T015', 'SP040', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR041', 'T016', 'SP041', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR042', 'T017', 'SP042', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR043', 'T018', 'SP043', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR044', 'T019', 'SP044', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR045', 'T020', 'SP045', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR046', 'T021', 'SP046', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR047', 'T022', 'SP047', 'COM002', 'PKG002');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR048', 'T023', 'SP048', 'COM003', 'PKG003');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR049', 'T024', 'SP049', 'COM001', 'PKG001');
+INSERT INTO Contract(contractCode, teamCode, sponsorCode, commissionCode, packageCode) VALUES ('CTR050', 'T025', 'SP050', 'COM002', 'PKG002');
+
+
+
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R001', 'SP001', 'T001', '2023-04-27');
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R001', 'SP001', 'T001', '2023-04-27');
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R001', 'SP001', 'T001',TO_DATE('27/04/2023', 'DD/MM/YYYY'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R002', 'SP002', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R003', 'SP003', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R004', 'SP004', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R005', 'SP005', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R006', 'SP006', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R007', 'SP007', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R008', 'SP008', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R009', 'SP009', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
+INSERT INTO Record(recordCode, sponsorCode, teamCode, dateSaleRecord) VALUES ('R010', 'SP010', 'T001', TO_DATE('2023-04-27', 'YYYY-MM-DD'));
